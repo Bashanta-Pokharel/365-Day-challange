@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function info(name, surname) {
+            alert("Hello " + name + " " + surname);
+        }
+
+        info("Bashanta", "Pokharel");
+
+
+
+
+
+    </script>
+    <script>
+        let ans = prompt("Enter the first number");
+        let num1 = Number(ans);
+
+         function checkodd(num){
+            if(num%2 == 0){
+                document.write("the num is even ");
+            }
+            else{
+                document.write("the num is odd" );
+            }
+         }
+         checkodd(num1);
+    </script>
+
+    <script>
+    function checkOdd(num) {
+        return num % 2 !== 0;
+    }
+
+    let n = parseInt(prompt("Enter a number:"));
+    let r = checkOdd(n);
+
+    if (r) {
+        alert(n + " is an odd number.");
+    } else {
+        alert(n + " is an even number.");
+    }
+</script>
+</body>
+</html>

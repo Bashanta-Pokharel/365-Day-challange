@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="s(event)">
+        <label for="">First name</label>
+        <input type="number" name="" id="first"><br>
+        <label for="">Second number</label>
+        <input type="number" name="" id="second"><br>
+        <button type="submit">Sum</button>
+        <script>
+            let s = function sum(event) {
+                event.preventDefault();
+                let n1 = document.getElementById("first").value;
+                let n2 = document.getElementById("second").value;
+                let addition = parseInt(n1) + parseInt(n2);
+                document.write("The sum is " + addition);
+            }
+        </script>
+    </form>
+</body>
+</html> 
