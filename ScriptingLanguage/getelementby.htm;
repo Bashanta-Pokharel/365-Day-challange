@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>display</title>
+</head>
+<body>
+    <p id="welcome"></p>
+    <script>
+    document.getElementById("welcome").innerHTML="welcome to the website plese stay tuned"
+    
+    </script>
+    
+</body>
+</html>
