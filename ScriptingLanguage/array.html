@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let arr1 =[];
+        let ar2 =[1,2,3,4,];
+        let ar3 =["Bashanta","sweekar","sweekriti","kritika"];
+    // document.write("array 1 element is ="+arr1);
+    //  document.write("array 2 element is ="+arr2);
+
+document.write("Array 3 elements are:<br>");
+for (let i = 0; i < ar3.length; i++) {
+    document.write(ar3[i] + "----");
+}
+        const arr3 = ["Bashanta", "sweekar", "sweekriti", "kritika"];
+const arr4 = new Array('bp', 'sk');                  // ['bp', 'sk']
+const arr5 = new Array('bp', 'sk', 44, 55);          // ['bp', 'sk', 44, 55]
+const arr6 = new Array(7);                           // [empty × 7]
+const arr7 = Array.of(7.5);                          // [7.5]
+const arr8 = Array.of(7.5);                          // [7.5]
+const copy = Array.from(arr3);                       // copy of arr3
+const arr9 = [55, 66, 99, ...arr3, 777, 9999];       // spread arr3 into arr9
+const arr11 = [...arr5];
+arr11.push("crazy")                             // copy of arr5
+
+// Display Array 9 elements
+document.write("<br>Array 9 elements are:<br>");
+for (let i = 0; i < arr9.length; i++) {
+    document.write(arr9[i] + " ---- ");
+}
+
+document.write("<br><br>"); // Add spacing between outputs
+
+// Display Array 11 elements
+document.write("Array 11 elements are:<br>");
+for (let i = 0; i < arr11.length; i++) {
+    document.write(arr11[i] + " ---- ");
+}
+
+
+
+
+
+const fruits = ["apple","orange","banana"]
+
+    </script>
+    
+</body>
+</html>

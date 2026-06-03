@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsexercise</title>
+</head>
+<body>
+    <p>This is a JS exercise</p>
+    <div id="output"></div>
+
+    <script>
+        let ans = prompt("enter the first number");
+        let ans1 = prompt("enter the second number");
+
+        let num1 = Number(ans);
+        let num2 = Number(ans1);
+
+        let sum = num1 + num2;
+
+      
+        let output = document.getElementById("output");
+        output.innerHTML = `
+            <p>first num ${num1}</p>
+            <p>second num ${num2}</p>
+            <p>Sum ${sum}</p>
+        `;
+    </script>
+</body>
+</html>

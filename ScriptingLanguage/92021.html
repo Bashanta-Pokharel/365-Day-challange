@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Mouse Event</title>
+    <script>
+      function changeText() {
+        document.getElementById("desc").innerHTML =
+          "This description appears when mouse is over the image.";
+      } 
+
+      function normal() {
+        document.getElementById("desc").innerHTML =
+          "This is the original image description and shown when mouse is out.";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="shiva.png"
+        width="200"
+        onmouseover="changeText()"
+        onmouseout="normal()"
+      />
+
+      <p id="desc">This is the original image description.</p>
+    </div>
+  </body>
+</html>
