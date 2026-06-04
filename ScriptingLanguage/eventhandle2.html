@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="f()">alert button</button>
+    <button type="button" id="mybutton">show the current date</button>
+    <button type="button" id="yourbutton">say hello</button>
+
+    <script>
+        let f = function() {
+            alert("button is clicked");
+        }
+
+        let btn = document.getElementById("mybutton");
+        btn.onclick = function() {
+            let d = new Date();
+            alert(d);
+        }
+
+        let great = function() {
+            let hello = document.getElementById("hello");
+            hello.innerHTML = "hello Namaskar";
+        };
+
+        let yourbtn = document.getElementById("yourbutton");
+        yourbtn.addEventListener("click", great);
+    </script>
+    <h1 id="hello"></h1>
+
+</body>
+</html>
