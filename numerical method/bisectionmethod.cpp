@@ -14,7 +14,7 @@ int main()
     printf("Enter the initial b: ");
     scanf("%f", &b);
     printf("Enter the Tolerance error: ");
-    scanf("%f", &te);
+    scanf("%f", &te);//this is trying to get the value of tolerance error from user
 
     printf("----------------------------------------------------------------------------------------------------------\n");
     printf("i\t\ta\t\tb\t\tc\t\tf(a)\t\tf(b)\t\tf(c)\n");
