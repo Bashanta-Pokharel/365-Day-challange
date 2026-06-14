@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="question4.aspx.cs" Inherits="lab9.question4" %>
+﻿c:\Users\pbasa\OneDrive\Desktop\basanta\dot net\lab9\lab9\question4.aspx.csc:\Users\pbasa\OneDrive\Desktop\basanta\dot net\lab9\lab9\question4.aspx.cs<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="question4.aspx.cs" Inherits="lab9.question4" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
