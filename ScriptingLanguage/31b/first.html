@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX </title>
+    <script>
+        function loadMessage() {
+            var name = document.getElementById("name").value;
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function () {
+                document.getElementById("output").innerText = this.responseText;
+            };
+
+            xhttp.open("GET", "second.php?name=" + name);
+            xhttp.send();
+        }
+    </script>
+</head>
+<h1>ajaxa  get using php</h1>
+
+<body>
+    <input type="text" id="name" placeholder="enter name">
+    <button onclick="loadMessage()">Send</button>
+
+    <p id="output"></p>
+</body>
+</html>
