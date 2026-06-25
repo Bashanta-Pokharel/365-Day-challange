@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery AJAX</title>
+
+    <!-- include jQuery -->
+    <script src="../jquery.js"></script>
+
+    <script>
+        function sendData() {
+            var name = $("#name").val();
+
+            $.ajax({
+                url: "hello.php",     // PHP file
+                type: "POST",          // request type
+                data: { name: name },  // data sent to PHP
+                success: function(response) {
+                    $("#output").text(response);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>using jquery AJAX post method</h1>
+
+    <input type="text" id="name" placeholder="Enter name">
+    <button onclick="sendData()">Send</button>
+
+    <p id="output"></p>
+    <p>Name:bashanta pokharel <br> roll:62(a)</p>
+
+</body>
+</html>
