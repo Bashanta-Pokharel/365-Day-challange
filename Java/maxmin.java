@@ -11,7 +11,7 @@ for(int i=1;i<n.length;i++)
 {
 System.out.print(" "+n[i]);
 }
-for(int i=1;i<n.length;
+for(int i=1;i<n.length;i++)
 {
 if (min>n[i])
 {
