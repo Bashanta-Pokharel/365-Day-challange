@@ -36,7 +36,7 @@ namespace lab7
             }
             finally
             {
-                Console.WriteLine("End of Transaction");
+                Console.WriteLine("End of Transaction/n plese vist again /n thak you");
             }
         }
     }
