@@ -17,7 +17,7 @@ namespace lab7
                 Console.WriteLine("The Anynomous mrthod example");
                 adddelegate del = delegate (int x, int y) { return x + y; };
                 int res = del.Invoke(45, 75);
-                Console.WriteLine("The sum of 2 Number 45 and 75 using Anonymous Function = " + res);
+                Console.WriteLine("The sum of 2 Number 45 and 75 using Anonymous Function = " + res);//this is lambda where used
             }
         }
         public class LambdaEx
@@ -28,9 +28,9 @@ namespace lab7
             {
                 Console.WriteLine("The Lambda expression Example");
                 AreaRectangle a = (l, b) => l * b;
-                Console.WriteLine("Area of rectangel with l= 45 and b= 20 =" + a.Invoke(45, 20));
+                Console.WriteLine("Area of rectangel with l= 45 and b= 20 =" + a.Invoke(75, 20));
                 AreaRectangle p = (l, b) => { return 2 * (l + b); };
-                Console.WriteLine("Perimeter of Rectangle with l= 45 and b= 20 " + p.Invoke(45, 20));
+                Console.WriteLine("Perimeter of Rectangle with l= 45 and b= 20 " + p.Invoke(75, 20));
             }
         }
     }
