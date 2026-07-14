@@ -27,7 +27,7 @@ namespace lab7
                 }
                 else
                 {
-                    throw new BalanceException("Insufficient Balance enter less than or equal to "+b);
+                    throw new BalanceException("Insufficient Balance please enter less than or equal to "+b);
                 }
             }
             catch (BalanceException ex)
@@ -36,7 +36,7 @@ namespace lab7
             }
             finally
             {
-                Console.WriteLine("End of Transaction");
+                Console.WriteLine("End of Transaction/n plese vist again /n thak you");
             }
         }
     }
