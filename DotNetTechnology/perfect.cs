@@ -19,4 +19,12 @@ namespace lab2
                     sum = sum + i;
 
             }
-          
+            if (sum == n)
+                Console.WriteLine(n+" is the perfect number.");
+            else
+                Console.WriteLine(n+" is not the Perfect number.");
+            Console.ReadKey();
+
+        }
+    }
+}
