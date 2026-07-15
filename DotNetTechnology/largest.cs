@@ -19,7 +19,7 @@ namespace lab2
             int large;
             if (a < b)
             {
-                if (b < c) 
+                if (b < c) //this is inline comment
                     large = c;
                 else
                     large = b;
