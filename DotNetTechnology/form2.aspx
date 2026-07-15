@@ -121,6 +121,7 @@
                 ForeColor="Red" />
 
             <br />
+            <p>this is the g=form aspx file </p>
 
             <asp:Label
                 ID="result"
