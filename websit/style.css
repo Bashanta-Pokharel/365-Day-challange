@@ -642,4 +642,10 @@ video {
     background: transparent;
     padding: 5px 0 0 0;
   }
+  .gallery-item figcaption3 {
+    transform: translateY(0);
+    position: static;
+    background: transparent;
+    padding: 5px 0 0 0;
+  }
 }
