@@ -20,3 +20,10 @@ p {
     border: none;
     border-radius: 5px;
 }
+.btn2 {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
