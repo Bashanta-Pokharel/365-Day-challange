@@ -12,6 +12,4 @@ int main()
  		printf("\n4*%d=%d",i,4*i);
  		i++;
  		
-	 }while(i<=20);
-	return 0;
-}
+	
