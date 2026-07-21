@@ -589,6 +589,64 @@ video {
     padding: 5px;
   }
   
+  
   button {
     padding: 10px 15px;
+    font-size: 0.9rem;
+    min-width: 100px;
+  }
   
+  .service-item {
+    min-height: 100px;
+  }
+  
+  .service-item p {
+    font-size: 0.9rem;
+  }
+  
+  .credits {
+    font-size: 0.8rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  
+  button:hover {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+  }
+  
+  button:active {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+  }
+  
+  .gallery-item:hover {
+    transform: none;
+  }
+  
+  .gallery-item:active {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item figcaption {
+    transform: translateY(0);
+    position: static;
+    background: transparent;
+    padding: 5px 0 0 0;
+  }
+  .gallery-item figcaption3 {
+    transform: translateY(0);
+    position: static;
+    background: transparent;
+    padding: 5px 0 0 0;
+  }
+}
