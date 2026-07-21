@@ -13,9 +13,3 @@ namespace lab9
         {
 
         }
-        protected void btnBack_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("question2.aspx");
-        }
-    }
-}
