@@ -63,3 +63,17 @@ int main()
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "..\\bgi");
 
+    int rx, ry, xc, yc;
+    printf("This Program is coded by Bashanta Pokharel\n");
+    cout << "Mid-Point Ellipse Drawing Algorithm" << endl;
+    cout << "Enter radius along x-axis (rx): ";
+    cin >> rx;
+    cout << "Enter radius along y-axis (ry): ";
+    cin >> ry;
+    cout << "Enter centre coordinates (xc yc): ";
+    cin >> xc >> yc;
+    midptellipse(rx, ry, xc, yc);
+    getch();
+    closegraph();
+    return 0;
+}
