@@ -1,15 +1,4 @@
-<?php
-session_start();
-include "database.php"; // Your database connection file
 
-$error1 = $error2 = '';
-$username = '';
-
-if (isset($_POST["login"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-    if (empty($username)) {
         $error1 = "*Username is required";
     }
     if (empty($password)) {
