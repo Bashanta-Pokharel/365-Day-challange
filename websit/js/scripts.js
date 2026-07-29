@@ -7,7 +7,7 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', S
+window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
     var navbarShrink = function () {
