@@ -1,35 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace lab2
+namespace Lab2
 {
-    internal class primeornot
+    internal class PrimeOrNot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the numer to check prime or not");
-            int n =int.Parse(Console.ReadLine());
-            bool prime = true;
+            Console.Write("Enter the number to check prime or not: ");
+            int n = int.Parse(Console.ReadLine());
+            bool isPrime = true;
+
             if (n <= 1)
-                prime = false;
+            {
+                isPrime = false;
+            }
             else
             {
-                for (int i = 2; i < n; i++)
+                for (int i = 2; i <= Math.Sqrt(n); i++)
                 {
                     if (n % i == 0)
-                        prime = false;
-                    break;
+                    {
+                        isPrime = false;
+                        break; // break only when divisor is found
+                    }
                 }
             }
-                if (prime)
-                    Console.WriteLine(+n + " is a prime number.");
-                else
-                    Console.WriteLine(n + " is not the prime number");
-                Console.ReadKey();
-            
+
+            if (isPrime)
+                Console.WriteLine($"{n} is a prime number.");
+            else
+                Console.WriteLine($"{n} is not a prime number.");
+
+            Console.ReadKey();
         }
     }
 }
