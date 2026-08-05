@@ -1,49 +1,54 @@
 ﻿using System;
 
-namespace lab7
+namespace Lab7
 {
     // Step 1: Define a delegate
     public delegate void Operation(int n1, int n2);
 
     public class MulticastDelegateEx
     {
-        public static void add(int n1, int n2)
+        public static void Add(int n1, int n2)
         {
             int result = n1 + n2;
-            Console.WriteLine("Sum of " + n1 + " and " + n2 + " = " + result);
+            Console.WriteLine($"Sum of {n1} and {n2} = {result}");
         }
 
-        public static void subtract(int n1, int n2)
+        public static void Subtract(int n1, int n2)
         {
             int result = n1 - n2;
-            Console.WriteLine("Difference of " + n1 + " and " + n2 + " = " + result);
+            Console.WriteLine($"Difference of {n1} and {n2} = {result}");
         }
 
-        public static void multiply(int n1, int n2)
+        public static void Multiply(int n1, int n2)
         {
             int result = n1 * n2;
-            Console.WriteLine("Product of " + n1 + " and " + n2 + " = " + result);
+            Console.WriteLine($"Product of {n1} and {n2} = {result}");
         }
-        public static void divide(int n1, int n2)
+
+        public static void Divide(int n1, int n2)
         {
-            int result = n1 / n2;
-            Console.WriteLine("Division of " + n1 + " and " + n2 + " = " + result);
+            if (n2 != 0)
+            {
+                int result = n1 / n2;
+                Console.WriteLine($"Division of {n1} and {n2} = {result}");
+            }
+            else
+            {
+                Console.WriteLine("Division by zero is not allowed.");
+            }
         }
 
         static void Main(string[] args)
         {
-            // Step 2: Create delegate instance pointing to methods
-            Operation op1 = new Operation(add);
+            // Step 2: Create delegate instances pointing to methods
+            Operation op = Add;
+            op += Subtract;
+            op += Multiply;
+            op += Divide;
 
-            // Step 3: Add more methods to the delegate chain
-            Operation op2 = new Operation(subtract);
-            Operation op3 = new Operation(multiply);
-            Operation op4 = new Operation(divide);
-            Operation op5 =  op1+op2+op3+op4;
-            op5.DynamicInvoke(50, 5);
-             
-            Console.WriteLine(" Example of Invoking multicast delegate");
-            
+            // Step 3: Invoke multicast delegate
+            Console.WriteLine("Example of invoking multicast delegate:");
+            op(50, 5);
 
             Console.ReadKey();
         }
