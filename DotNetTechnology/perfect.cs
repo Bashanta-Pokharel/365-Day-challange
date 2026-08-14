@@ -25,4 +25,6 @@ namespace lab2
                 Console.WriteLine(n+" is not the Perfect number.");
             Console.ReadKey();
 
-    
+        }
+    }
+}
