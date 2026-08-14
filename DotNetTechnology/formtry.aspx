@@ -13,7 +13,6 @@
             <asp:Label ID="l1" runat="server">Username</asp:Label>
             <asp:TextBox ID="txtname" runat="server"></asp:TextBox>
 
-            
 
             <asp:Label ID="l2" runat="server">Password</asp:Label>
             <asp:TextBox ID="txtpass" runat="server" TextMode="Password"></asp:TextBox>
